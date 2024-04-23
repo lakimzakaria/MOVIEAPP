@@ -5,7 +5,7 @@ import 'package:movieapp/api_data/movie_data_source.dart';
 import 'package:movieapp/Home_page/list_tile.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   _HomePageState createState() => _HomePageState();
