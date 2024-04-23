@@ -14,10 +14,12 @@ class CustomDrawer extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             ListTile(
-              leading: const Icon(Icons.home, color: Colors.white), // Set the icon color to white
+              leading: const Icon(Icons.home,
+                  color: Colors.white), // Set the icon color to white
               title: const Text(
                 'Home',
-                style: TextStyle(color: Colors.white), // Set the text color to white
+                style: TextStyle(
+                    color: Colors.white), // Set the text color to white
               ),
               onTap: () {
                 Navigator.push(
@@ -27,28 +29,33 @@ class CustomDrawer extends StatelessWidget {
               },
             ),
             ListTile(
-              leading: const Icon(Icons.favorite, color: Colors.white), // Set the icon color to white
+              leading: const Icon(Icons.favorite,
+                  color: Colors.white), // Set the icon color to white
               title: const Text(
                 'Favorites',
-                style: TextStyle(color: Colors.white), // Set the text color to white
+                style: TextStyle(
+                    color: Colors.white), // Set the text color to white
               ),
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const FavoriteMovies()),
+                  MaterialPageRoute(
+                      builder: (context) => const FavoriteMovies()),
                 );
               },
             ),
             ListTile(
-              leading: const Icon(Icons.location_on, color: Colors.white), // Set the icon color to white
+              leading: const Icon(Icons.location_on,
+                  color: Colors.white), // Set the icon color to white
               title: const Text(
                 'Cinema Near Me',
-                style: TextStyle(color: Colors.white), // Set the text color to white
+                style: TextStyle(
+                    color: Colors.white), // Set the text color to white
               ),
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => CinemaNearMe()),
+                  MaterialPageRoute(builder: (context) => const CinemaNearMe()),
                 );
               },
             ),
